@@ -1,0 +1,918 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.body {
+  background-color: #0e0c12;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 0%;
+}
+header .Down {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 80px;
+  padding-top: 40px;
+}
+header .LeftSide {
+  display: flex;
+  position: relative;
+  height: 60px;
+}
+header .LeftSide h1 {
+  font-family: Poppins;
+}
+header .LeftSide p {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  font-weight: lighter;
+  font-family: Poppins;
+}
+header .RightSide {
+  display: flex;
+}
+header .RightSide i {
+  font-size: 40px;
+  visibility: hidden;
+}
+header .RightSide ul {
+  display: flex;
+  gap: 50px;
+}
+header .RightSide ul li {
+  list-style: none;
+}
+header .RightSide ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+}
+header .RightSide ul li a:hover {
+  color: orange;
+}
+
+.Hero {
+  width: 100%;
+  height: 150vh;
+  position: relative;
+}
+.Hero .Bar {
+  width: 600px;
+  height: 700px;
+  position: absolute;
+  background-color: #0e0c12;
+  border-radius: 50% 50% 0 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Hero .Bar .BookingTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hero .Bar .BookingTable h1 {
+  font-size: 150px;
+}
+.Hero .Bar .BookingTable button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  width: 170px;
+  height: 50px;
+  font-weight: lighter;
+  transition: 0.4s;
+}
+.Hero .Bar .BookingTable button:hover {
+  background-color: white;
+  color: black;
+}
+.Hero .Bar .Adress {
+  position: relative;
+  top: 110px;
+}
+.Hero .Bar .Adress::after {
+  content: "";
+  width: 110%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%);
+}
+.Hero .MainSection {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(./hero/cocteil.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  filter: brightness(80%);
+  filter: blur(0.5px);
+}
+
+.About {
+  width: 100%;
+  height: 70vh;
+  background-color: #0e0c12;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.About .TopSection {
+  display: flex;
+  gap: 150px;
+  position: relative;
+  height: 190px;
+}
+.About .TopSection .LeftSide h1 {
+  font-size: 80px;
+  font-family: Poppins;
+}
+.About .TopSection .LeftSide p {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.About .TopSection::after {
+  content: "";
+  width: 110%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.About .RightSide p {
+  font-size: 20px;
+}
+.About .BottomSection {
+  align-self: flex-start;
+  padding-left: 170px;
+  padding-top: 50px;
+}
+.About .BottomSection h1 {
+  font-size: 80px;
+  font-family: Poppins;
+}
+
+.whatSon {
+  width: 100%;
+  height: 200vh;
+  background-color: #0e0c12;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+.whatSon .conteiner {
+  width: 100%;
+  height: 37%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.whatSon .conteiner .size {
+  height: 100%;
+  width: 40%;
+}
+.whatSon .conteiner .img {
+  background-image: url(./whatison/drinks-in-hands.webp);
+  background-size: cover;
+}
+.whatSon .conteiner .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatSon .conteiner .text h2 {
+  font-size: 20px;
+  align-self: flex-start;
+}
+.whatSon .conteiner .text .Headline {
+  font-size: 40px;
+}
+.whatSon .conteinerevers {
+  flex-direction: row-reverse;
+}
+.whatSon .conteinerevers .img2 {
+  background-image: url(./whatison/playing-guitar--2.webp);
+  background-size: cover;
+}
+.whatSon .h1 h1 {
+  font-size: 80px;
+  font-family: Poppins;
+}
+
+.Table {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  width: 170px;
+  height: 50px;
+  font-weight: lighter;
+  transition: 0.4s;
+}
+.Table:hover {
+  background-color: white;
+  color: black;
+}
+
+.Photos {
+  width: 100%;
+  height: 100vh;
+  background-color: #0e0c12;
+  display: grid;
+  grid-template-columns: 50% auto auto;
+  padding-inline: 7px;
+  gap: 10px;
+}
+.Photos .ZoomIN2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Photos .ZoomIn {
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Photos .bigPhoto {
+  background-image: url(./drinks/bigimg.webp);
+}
+.Photos .smallimg {
+  background-image: url(./drinks/smallimg.jpeg);
+}
+.Photos .smallimg2 {
+  background-image: url(./drinks/smallimg2.webp);
+}
+.Photos .smallimg3 {
+  background-image: url(./drinks/smallimg3.jpeg);
+}
+.Photos .smallimg4 {
+  background-image: url(./drinks/smallimg4.jpeg);
+}
+.Photos .child {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 2s ease-in-out;
+}
+.Photos .child:hover {
+  transform: scale(1.2);
+}
+
+.Reserve {
+  width: 100%;
+  height: 50vh;
+  background-color: #0e0c12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.Reserve h1 {
+  font-size: 80px;
+  font-family: Poppins;
+}
+.Reserve .options {
+  display: flex;
+  gap: 30px;
+}
+.Reserve .options div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Reserve .options div select,
+.Reserve .options div input {
+  background-color: transparent;
+  width: 350px;
+  height: 45px;
+  border: none;
+  border: 1px solid white;
+}
+.Reserve .options button {
+  align-self: flex-end;
+  height: 45px;
+  background-color: #d68a1a;
+  width: 110px;
+  border: none;
+  color: #0e0c12;
+  font-weight: lighter;
+  transition: 0.5s;
+}
+.Reserve .options button a {
+  color: white;
+  text-decoration: none;
+}
+.Reserve .options button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #d68a1a;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer .map {
+  width: 100%;
+  height: 50vh;
+}
+footer .map iframe {
+  width: 100%;
+  height: 100%;
+}
+footer #Contact {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+footer #Contact div {
+  display: flex;
+  flex-direction: column;
+}
+footer #Contact .Bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer #Contact .Bar h1 {
+  position: relative;
+  right: -25px;
+}
+footer #Contact .Bar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer #Contact .Bar ul li {
+  list-style: none;
+}
+footer #Contact .Bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer #Contact .Contact .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer #Contact .Join {
+  gap: 5px;
+}
+footer #Contact .Join input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  padding-left: 10px;
+}
+footer #Contact .Join input:hover {
+  border-bottom: 2px solid white;
+}
+footer #Contact .Join input:focus {
+  border-bottom: 2px solid white;
+}
+footer #Contact .Join button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+  width: 170px;
+  height: 50px;
+  font-weight: lighter;
+  transition: 0.4s;
+}
+footer #Contact .Join button:hover {
+  background-color: white;
+  color: black;
+}
+footer #Contact .hours h4 {
+  position: relative;
+  right: -30px;
+}
+footer #Contact .hours ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer #Contact .hours ul li {
+  list-style: none;
+}
+
+/* menu page starting from here */
+.MenuHero {
+  width: 100%;
+  height: 60vh;
+  background-image: url(./menuheroimg/betterhero.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Food {
+  width: 100%;
+  background-color: #0e0c12;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.Food .makingLine {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.Food .makingLine::after {
+  position: relative;
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.Food .makingLine .Price {
+  display: flex;
+  gap: 100px;
+}
+.Food div .Headline {
+  font-size: 25px;
+  font-family: Poppins;
+}
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+.chat button {
+  width: 200px;
+  height: 70px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.chat button a {
+  text-decoration: none;
+  color: black;
+}
+.chat button i {
+  color: black;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+/* book a table page starts here */
+.BookAtableReservetion {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+}
+.BookAtableReservetion .Headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BookAtableReservetion .Headline h1 {
+  font-family: Poppins;
+  font-size: 50px;
+}
+.BookAtableReservetion .styling {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 1px;
+}
+.BookAtableReservetion .styling::after {
+  content: "";
+  width: 78%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -40px;
+}
+.BookAtableReservetion .styling div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.BookAtableReservetion .styling div select,
+.BookAtableReservetion .styling div input {
+  background-color: transparent;
+  width: 350px;
+  height: 45px;
+  border: none;
+  border: 1px solid white;
+  padding-left: 10px;
+}
+.BookAtableReservetion .slot {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+.BookAtableReservetion .slot .Butons {
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px 140px;
+  gap: 20px;
+}
+.BookAtableReservetion .slot .Butons button {
+  width: 140px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid white;
+}
+.BookAtableReservetion .slot .Butons button:focus {
+  background-color: #221a14;
+  border: 1px solid #d68a1a;
+}
+.BookAtableReservetion .slot p {
+  position: relative;
+  left: -281px;
+}
+.BookAtableReservetion .slot .Reserve button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #d68a1a;
+  color: #0e0c12;
+  font-weight: lighter;
+  transition: 0.4s;
+}
+.BookAtableReservetion .slot .Reserve button:hover {
+  background-color: #0e0c12;
+  border: 1px solid #d68a1a;
+}
+.BookAtableReservetion .slot .Reserve button:hover a {
+  color: #d68a1a;
+}
+.BookAtableReservetion .slot .Reserve button a {
+  text-decoration: none;
+  color: #0e0c12;
+  transition: 0.4s;
+}
+
+.footer {
+  margin-top: 200px;
+}
+
+/* reserv */
+.resservingTable {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+}
+.resservingTable form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resservingTable form .form {
+  display: flex;
+  gap: 20px;
+}
+.resservingTable form .form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.resservingTable form .form div input {
+  width: 250px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #646467;
+  outline: none;
+}
+.resservingTable form .form div label {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.resservingTable form button {
+  background-color: #d68a1a;
+  border: none;
+  height: 40px;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  transition: 0.4s;
+}
+.resservingTable form button:hover {
+  background-color: transparent;
+  border: 1px solid #d68a1a;
+  color: #d68a1a;
+}
+.resservingTable .LeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resservingTable .LeftSide .TopSide {
+  width: 500px;
+  height: 80px;
+  background-color: #19181d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resservingTable .LeftSide .TopSide p {
+  font-weight: lighter;
+}
+.resservingTable .LeftSide .BottomSide {
+  width: 500px;
+  height: 200px;
+  background-color: #19181d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.resservingTable .LeftSide .BottomSide p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+.resservingTable .LeftSide .BottomSide h4 {
+  font-size: 20px;
+}
+.resservingTable .LeftSide .BottomSide a {
+  color: white;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  .About .TopSection::after {
+    display: none;
+  }
+  .whatSon .conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatSon .conteiner .size {
+    width: 100%;
+  }
+  .Photos {
+    grid-template-columns: auto auto;
+  }
+  .Photos .ZoomIn {
+    grid-column: span 2;
+  }
+  .Reserve .options {
+    flex-direction: column;
+  }
+  .Reserve .options button {
+    width: 100%;
+  }
+  footer #Contact {
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+  }
+  .styling {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resservingTable {
+    flex-direction: column;
+  }
+  .resservingTable .RightSide div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  header {
+    width: 100%;
+    position: relative;
+  }
+  header .LeftSide {
+    position: absolute;
+    left: 0;
+  }
+  header .RightSide ul {
+    display: none;
+  }
+  header .RightSide i {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+  }
+  .BookAtableReservetion {
+    position: relative;
+    width: 80%;
+  }
+  .BookAtableReservetion .Headline {
+    position: absolute;
+    align-items: flex-start;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .BookAtableReservetion .Headline h1 {
+    font-size: 30px;
+    width: 200px;
+  }
+  .BookAtableReservetion .Headline p {
+    font-size: 18px;
+    width: 200px;
+  }
+  .BookAtableReservetion .Butons {
+    grid-template-columns: 70px 70px 70px !important;
+    margin-top: 200px;
+    width: 80%;
+  }
+  .BookAtableReservetion .Butons button {
+    width: 70px !important;
+  }
+  .styling {
+    padding-top: 0px !important;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+    width: inherit;
+  }
+  .styling div select,
+  .styling div input {
+    width: 80% !important;
+  }
+  .slot .Reserve {
+    height: auto;
+  }
+  .slot .Reserve button {
+    width: 90% !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  footer {
+    width: 80%;
+    margin-top: 300px !important;
+    height: auto;
+  }
+  footer #Contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .chat button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  footer .chat button a {
+    display: none;
+  }
+  footer .chat button i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .Hero .Bar {
+    width: 78%;
+    height: 40%;
+    transform: translate(-50%);
+  }
+  .Hero .Bar .BookingTable h1 {
+    font-size: 30px;
+  }
+  .Hero .Bar .Adress {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Hero .Bar .Adress::after {
+    display: none;
+  }
+  .Hero .MainSection {
+    width: 100%;
+  }
+  .About {
+    position: relative;
+  }
+  .About .TopSection {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .About .TopSection .LeftSide {
+    display: flex;
+    flex-direction: column;
+  }
+  .About .TopSection .LeftSide h1 {
+    font-size: 40px;
+  }
+  .About .TopSection .RightSide p {
+    width: 300px;
+  }
+  .About .TopSection::after {
+    display: none;
+  }
+  .About .BottomSection {
+    position: absolute;
+    bottom: 30px;
+    left: -140px;
+  }
+  .About .BottomSection h1 {
+    font-size: 30px;
+  }
+  .whatSon .conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatSon .conteiner .size {
+    width: 100%;
+  }
+  .whatSon .h1 h1 {
+    font-size: 30px;
+  }
+  .Photos {
+    grid-template-columns: auto auto;
+  }
+  .Photos .ZoomIn {
+    grid-column: span 2;
+  }
+  .Reserve h1 {
+    font-size: 30px;
+  }
+  .Reserve .options {
+    flex-direction: column;
+  }
+  .Reserve .options button {
+    width: 100%;
+  }
+  .resservingTable {
+    flex-direction: column-reverse;
+  }
+  .resservingTable .RightSide div {
+    flex-direction: column;
+  }
+  .resservingTable .LeftSide {
+    margin-top: 400px;
+  }
+  .resservingTable .LeftSide .TopSide {
+    width: 200px;
+    font-size: 14px;
+    height: 100px;
+  }
+  .resservingTable .LeftSide .BottomSide {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
