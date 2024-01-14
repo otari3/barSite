@@ -833,12 +833,6 @@ footer {
     transform: translate(-50%);
 
     width: inherit;
-    div {
-      select,
-      input {
-        width: 80% !important;
-      }
-    }
   }
   .slot {
     .Reserve {
@@ -958,7 +952,6 @@ footer {
     }
     .options {
       flex-direction: column;
-
       button {
         width: 100%;
       }

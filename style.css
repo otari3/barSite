@@ -791,10 +791,6 @@ footer #Contact .hours ul li {
     transform: translate(-50%);
     width: inherit;
   }
-  .styling div select,
-  .styling div input {
-    width: 80% !important;
-  }
   .slot .Reserve {
     height: auto;
   }
